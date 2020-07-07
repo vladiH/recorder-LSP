@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="267.138" Width="537.771">
+    <Grid Margin="0,0,2,0" Height="238" VerticalAlignment="Top">
+        <TextBlock Text="Connection ID" Grid.Column="0"
+                   Height="20" VerticalAlignment="Top" Margin="10,30,327,0" />
+        <TextBlock x:Name="txConnectID"
+        	Margin="123,30,47,188" ><Run Language="es-pe" Text="N/A"/></TextBlock>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="14,206,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="95,206,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Label Content="Unique Device ID&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="89"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Color Stream" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Depth Stream" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="Skeleton Tracking" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sensor Angle" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txUniqueDevice" HorizontalAlignment="Left" Margin="123,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.043,-0.788" Width="250"><Run Language="es-pe" Text="N/A"/></TextBlock>
+        <TextBlock x:Name="txStatus" HorizontalAlignment="Left" Margin="123,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"><Run Language="es-pe" Text="N/A"/></TextBlock>
+        <CheckBox x:Name="cbColor" Content="" HorizontalAlignment="Left" Margin="123,108,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbDepth" Content="" HorizontalAlignment="Left" Margin="123,134,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbSkeleton" Content="" HorizontalAlignment="Left" Margin="123,160,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txAngle" HorizontalAlignment="Left" Margin="123,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-pe" Text="0"/></TextBlock>
+        <Button x:Name="btnSensores" Content="Open Sensor" HorizontalAlignment="Left" Margin="175,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSensores_Click"/>
+    </Grid>
+</Window>
